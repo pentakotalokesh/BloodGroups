@@ -1,1 +1,1 @@
-web: gunicorn bgapp.wsgi
+web: gunicorn Bloodgroup.wsgi
