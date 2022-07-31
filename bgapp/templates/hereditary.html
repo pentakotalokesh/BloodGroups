@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <style type="text/css">
         body{
+            padding: 0px;
+            margin: 0px;
             background-color: #ebedee;
             font-family: 'Roboto Mono', monospace;
         }
@@ -17,19 +19,17 @@
             text-align: center;
         }
         #ih{
-            width: 250px;
-            height: 250px;
+            width: 200px;
+            height: 200px;
             border-radius: 50px;
             padding: 0px;
         }
-        .box{
+
+           .box{
             text-align: center;
             border-radius: 10px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
         }
+        
         .box select {
             background-color: red;
             color: white;
@@ -84,6 +84,9 @@
             color: white;
             background-color: red;
         }
+        #formo{
+            margin-top: 100px;
+        }
     </style>
 </head>
 <body>
@@ -91,9 +94,9 @@
         <h1>Hereditary</h1>
         <img id="ih" src="static/page1.png" alt="heridity" />
     </div>
+     <hr/>
+     <div id="formo">
     <form method="get" action="suggest">
-    <div id="formo">
-        <hr/>
         <div class="box">
         <select name="bloodgroup_1">
             <option disabled="true" selected>--Select Father Blood Group--</option>
@@ -111,8 +114,8 @@
         </select>
         <input id="button" type="submit"/>
         </div>
-    </div>
 </form>
+</div>
 <br>
 <br>
 {% if res %}
