@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-nsrb=l&*fy9*!e4!e=&*xqc^%vm86tx$)!f0@6len*mg-*p^dy
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1','infobloodgroups.herokuapp.com']
 
 
 # Application definition
